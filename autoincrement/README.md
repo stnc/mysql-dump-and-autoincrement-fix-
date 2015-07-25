@@ -28,7 +28,7 @@ $q = " SELECT * FROM users";
 <pre>		
 fetch method for single row selecting records from a database
 $q = " SELECT * FROM users";
-		$array_expression = $db->rows ( $q );
+		$array_expression = $db->fetch ( $q );
 		foreach ( $array_expression as $value ) {
 			echo $value ['name'];
     }
