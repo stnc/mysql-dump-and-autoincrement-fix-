@@ -23,7 +23,8 @@ $q = " SELECT * FROM users";
 		foreach ( $array_expression as $value ) {
 			echo $value ['name'];
     }
-
+  </pre>
+  <br>
 <pre>		
 fetch method for single row selecting records from a database
 $q = " SELECT * FROM users";
@@ -32,6 +33,7 @@ $q = " SELECT * FROM users";
 			echo $value ['name'];
     }
   </pre>
+  <br>
 <pre>   
 insert method    
  $data = array(
@@ -43,4 +45,30 @@ insert method
 
 	         $db->insert('users',$data );   
     
+</pre>
+
+<pre>   
+update method    
+ $data = array(
+	       'name' => "john",
+	       'lastname' => "carter",
+	       'status' => 1,
+	       'age' =>25 ,
+	          );
+
+	         $where = array(
+	           'user_id' => 1
+	          );
+	         
+	         $this-> update('users', $data, $where);   
+    
+</pre>
+
+
+<pre>   
+delete method    
+ $where = array(
+	          'user_id' => 1
+	           );
+$db->delete("users", $where); 
 </pre>
