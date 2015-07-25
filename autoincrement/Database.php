@@ -3,7 +3,7 @@
 namespace STNC;
 
 /**
- * SAVEAS FRAMEWORK
+ * pdo mysql database class 
  *
  * Copyright (c) 2015
  *
