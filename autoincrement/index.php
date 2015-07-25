@@ -10,10 +10,9 @@ function first_array_value($value) {
 }
 function run($param=false) {
 	if ($param == 'run') {
+		include ("Config.php");
 		include ("DatabaseInterface.php");
 		include ("Database.php");
-		
-		include ("Config.php");
 		
 		$db = new STNC\Database ();
 		
