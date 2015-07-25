@@ -2,6 +2,8 @@ use
 cmd.exe or linux terminal run 
 write to 
 <pre>php -f index.php -- -s run
+</pre>
+<pre>
 <br>
 pdo class uses examples
 open and create test.php
