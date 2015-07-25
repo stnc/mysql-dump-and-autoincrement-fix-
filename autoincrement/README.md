@@ -6,7 +6,7 @@ write to
 <pre>
 <br>
 pdo class uses examples
-open and create test.php
+ create test.php and opened to write 
 
 include ("Config.php");
 include ("DatabaseInterface.php");
