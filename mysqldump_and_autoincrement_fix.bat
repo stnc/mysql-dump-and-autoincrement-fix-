@@ -26,5 +26,5 @@ php -f autoincrement/index.php -- -s run
 
 
 color 4
-echo -------------will done happy coding-------------------------------
+echo -------------will done, happy coding-------------------------------
 PAUSE
