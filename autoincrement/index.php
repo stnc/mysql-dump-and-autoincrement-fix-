@@ -20,7 +20,7 @@ function run($param=false) {
 		$array_expression = $db->rows ( $q );
 		echo 'Auto increment running';
 		foreach ( $array_expression as $value ) {
-			$colonName = $value ['Tables_in_application'];
+			$colonName = $value ['Tables_in_'.DB_NAME];
 		//	echo "\n";
 			$firstArray = first_array_value ( $db->rows ( 'SHOW COLUMNS FROM ' . $colonName ) );
 			$sql = "ALTER TABLE " . $colonName . " MODIFY COLUMN " . $firstArray . "  int(11) NOT NULL AUTO_INCREMENT FIRST;";
