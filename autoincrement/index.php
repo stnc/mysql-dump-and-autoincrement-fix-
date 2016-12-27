@@ -65,6 +65,6 @@ if ($argc < 2) {
 	$file = basename ( __FILE__ );
 	print "STNC Autoincrement Generator" . CRLF;
 	print "Usage: php -f $file -- -s komut \n [--override -d output_dir -f output_filename]" . CRLF;
-	//or //D:\xampp\php\php.exe -f index.php -- -d run
+	//or //D:\xampp\php\php.exe -f index.php -- -d selman
 	exit ();
 }
