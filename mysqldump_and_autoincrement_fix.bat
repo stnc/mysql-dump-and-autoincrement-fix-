@@ -23,6 +23,7 @@ rem "D:\EasyPHP-DevServer-14.1VC11\binaries\mysql\bin\mysqldump.exe" --user=root
 color 5
 ECHO ----------------------auto increment fix------------------------- 
 php -f autoincrement/index.php -- -s run
+rem D:\xampp\php\php.exe -f index.php -- -d run
 
 
 color 4
