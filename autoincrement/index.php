@@ -16,16 +16,19 @@ function run($param=false) {
 		
 		$db = new STNC\Database ();
 		
+		$excluding_tables = array("wp_woocommerce_shipping_zone_methods", "wp_term_relationships");
+		
 		$q = "SHOW FULL TABLES";
 		$array_expression = $db->rows ( $q );
 		echo 'Auto increment running';
 		foreach ( $array_expression as $value ) {
 			$colonName = $value ['Tables_in_'.DB_NAME];
 		//	echo "\n";
+		if (!in_array($colonName, $excluding_tables)) {
 			$firstArray = first_array_value ( $db->rows ( 'SHOW COLUMNS FROM ' . $colonName ) );
 			$sql = "ALTER TABLE " . $colonName . " MODIFY COLUMN " . $firstArray . "  int(11) NOT NULL AUTO_INCREMENT FIRST;";
 			$db->querys ( $sql );
-		}
+		}}
 	} else {
 		die ( "unknown params" );
 	}
